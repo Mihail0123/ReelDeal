@@ -51,7 +51,7 @@ python main.py
 
 - После запуска вы увидите приветствие и список команд.
 - Вводите команды согласно подсказкам (например, `search Matrix`, `categories`, `actors`, `filter Action Pitt 2006`, `back`, `home`, `exit`).
-- Для перехода по спискам используйте номера, для навигации — команды `next`, `prev`, `back`, `home`.
+- Для перехода по спискам используйте номера, для навигации - команды `next`, `prev`, `back`, `home`.
 
 ---
 
@@ -66,12 +66,12 @@ python main.py
 ## Структура проекта
 
 ReelDeal/
-├── main.py
-├── config.py
-├── db.py
-├── models.py
-├── repository.py
-├── views.py
-├── .env
-├── .gitignore
+├-- main.py
+├-- config.py
+├-- db.py
+├-- models.py
+├-- repository.py
+├-- views.py
+├-- .env
+├-- .gitignore
 

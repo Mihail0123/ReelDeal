@@ -48,6 +48,8 @@ def main():
             cmd = input("\n> ").strip()
             if not cmd:
                 continue
+            repo.log_command(cmd)
+
 
             # Пагинация
             if cmd == 'next':

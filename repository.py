@@ -7,7 +7,7 @@ from models import Film, Actor, Category
 class Repository:
     """
     Универсальный репозиторий для работы с БД.
-    Все методы принимают self.cursor (курсор MySQL).
+    Все методы принимают self.cursor.
     Методы возвращают списки объектов моделей (Film, Actor, Category)
     или отдельные объекты (например, случайный фильм).
     """

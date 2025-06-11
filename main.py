@@ -289,8 +289,13 @@ def main():
                         show_error("Неверный номер актёра.")
                     continue
 
+                # Популярные команды не поддерживают выбор по номеру
+                if current_context == 'top_queries':
+                    show_error("Введите нужную команду текстом")
+                    continue
+
                 # Фильмы (поиск, фильтр, поиск по актёру)
-                if current_context in ['search', 'filter', 'top_queries', 'actors']:
+                if current_context in ['search', 'filter', 'actors']:
                     films = current_data
                     page_items, page_info, total_pages = paginate(films, paginator['page'])
                     if 1 <= idx <= len(page_items):
